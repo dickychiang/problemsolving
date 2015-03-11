@@ -2,36 +2,24 @@ public class FunnyFence {
 
     public int getLength(String s)
     {
-        boolean x;
-        int temp = 1;
+        boolean x = true; // true = "|" ; false = "-"
+        boolean fence = true; // true = "|" ; false = "-"
+        int temp = 0;
         int ret = 0;
-	//int length = s.length;
-	
-	//String[] reverse;
-	//reverse = new String[50];
-	//reverse = s;
-	//x = (reverse[0] == "|")? true : false;
-	  
-        System.out.println("s.length() =" +s.length());
+        
+
         for( int i = 0; i < s.length(); i++)
         {
-        /*
-            if (reverse[i] == "-" && x == true) {
-                temp++;
-                x = false;
-            } else if (reverse[i] == "|" && x == false) {
-                temp++;
-                x = true;
-            } 
-            else
-            {
-                if (temp > ret)
-                    ret = temp;
-                temp = 1;
-            }
-            */
+            int len = 1;
+            int j = i;
+            for ( j = i ; j < s.length()-1; j++)
+                if ( s.charAt(j) == s.charAt(j+1) )
+                    break;
+            len = j - i + 1;
+            if ( len > temp )
+                temp = len;
         }
-        if (temp > ret) ret = temp;
+        ret = temp;
         return ret;
     }
 }

@@ -22,7 +22,7 @@ System.out.println(in0);
  System.out.println("total_marks: " + mark);
  System.out.println("out_of: " + counter);
      return;}
-/*
+
    counter++; 
    String in1 = "-|-|-|-";
    int out1 = 7;
@@ -1280,7 +1280,7 @@ System.out.println(in74);
  System.out.println("total_marks: " + mark);
  System.out.println("out_of: " + counter);
      return;}
-*/
+
  System.out.println("total_marks: " + mark);
  System.out.println("out_of: " + counter);
     }
