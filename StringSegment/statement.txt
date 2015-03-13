@@ -1,0 +1,38 @@
+Problem Statement
+
+A string is considered to be a composite of several maximal segments of identical characters. For example, "aaabbaaac" is a composite of the segments: "aaa", "bb", "aaa" and "c". Given a string, return the average length of all the segments which form that string.
+
+Definition
+
+
+Class:  StringSegment
+Method: average
+Parameters: String
+Returns:    double
+Method signature:   double average(String s)
+(be sure your method is public)
+
+
+Notes
+
+-   A return value with either an absolute or relative error of less than 1.0E-9 is considered correct.
+
+Constraints
+
+-   s will contain between 1 and 50 characters, inclusive.
+-   s will contain only lowercase letters ('a'-'z').
+
+Examples
+
+0)  
+"aaabbaaac"
+Returns: 2.25
+Average length of all the segments = ( 3 + 2 + 3 + 1 ) / 4 = 2.25
+
+1)  
+"aabbccdd"
+Returns: 2.0
+
+2)  
+"abba"
+Returns: 1.3333333333333333
